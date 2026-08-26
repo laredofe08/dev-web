@@ -1,0 +1,136 @@
+/* === IMPORTAÇÃO DE FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+Fontes Disponíveis:
+// Sugiro usar esta 
+font-family: "Urbanist", sans-serif; 
+font-family: "Fredoka", sans-serif;
+font-family: "Epilogue", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Oswald", sans-serif;
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html{
+    font-size: clamp(1rem, 2vw + 0.8rem, 3rem); 
+}
+html{
+    text-align: center;
+}
+header nav ul li{
+    font-size: 0.7rem;
+}
+.banner{
+    background-color: rgb(224, 223, 223);
+}
+.banner h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+}
+.banner h2 span{
+    color: #F857A6;
+}
+.banner p{
+    color: gray;
+    padding: 10px;
+}
+.banner a.botao{
+    background-color: #EF3F6E;
+    padding: 1vw;
+    border-radius: 8px;
+    margin: 5px 0 40px 10px;
+    display: inline-block;
+    color: white;
+}
+.projetos{
+    padding: 10vw 5vw;
+}
+.projetos h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(0, 11, 66);
+    margin: 25px 0;
+}
+.projetos ul li h4{
+    color: rgb(0, 11, 66);
+    font-weight: 500;
+    margin: 10px 0;
+}
+.projetos ul li p{
+    color: gray;
+    font-size: 0.7rem;
+    margin: 10px ;
+}
+.chamada{
+    background-color: #F9DBF7;
+    padding: 10vw 10vw;
+}
+.chamada h3{
+    color: #F857A6;
+    font-size: 0.6rem;
+    margin: 10px 0;
+}
+.chamada p{
+    color: rgb(0, 11, 66);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.chamada p span{
+    color: #EF3F6E;
+    border-bottom: 2px solid #EF3F6E;
+    display: inline-block;
+}
+.chamada a.botao{
+    background-color: #F857A6;
+    padding: 1vw;
+    border-radius: 8px;
+    margin: 30px 0 40px 0;
+    display: inline-block;
+    color: white;
+}
+footer{
+    padding: 60px;
+}
+footer p a{
+    font-size: 0.6rem;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+/* MEDIA QUERY - DESKTOP */
+@media  screen and (min-width: 600px) {
+    header{
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+    }
+    .banner{
+        display: flex;
+        padding: 120px 100px ;
+        text-align: left;   
+    }
+    .banner img{
+        width: 1000px;
+    }
+    .banner h2{
+        padding: 20px;
+    }
+    .projetos ul{
+        display: flex;
+    }
+}
