@@ -22,7 +22,7 @@ header nav li.button{
 .banner{
   background: url(../images/background-banner.png) no-repeat;
   background-size: 100% auto;
-  padding: 3vw 5vw 7vw 5vw;
+  padding: 3vw 5vw 3vw 5vw;
   margin: 5vw 0 5vw 0;
 }
 .banner div.img{
@@ -55,6 +55,41 @@ header nav li.button{
 .banner p.buttons img{
   height: 50%;
 }
+.ready div.imagem{
+  display: none;
+}
+.ready{
+  text-align: center;
+  padding: 3vw 5vw 3vw 5vw;
+}
+.ready h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 0;
+}
+.ready div ul li{
+  margin: 20px 0;
+}
+.ready h3{
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px 0;
+}
+.ready p{
+  color: gray;
+}
+.download{
+  background: #FBBC05;
+  margin: 3vw 5vw ;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.download h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+}
 
 
 @media only screen and (min-width: 600px){
@@ -79,12 +114,43 @@ header nav li.button{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
     background-size: auto 100%;
     background-size: 100% auto;
     margin: 5vw 5vw 2vw 5vw;
   }
   .banner div.img{
     display: block;
+  }
+  .ready div.imagem{
+    display: block;
+  }
+  .ready > p{
+    padding: 0 20vw 0 20vw;
+  }
+  .ready > div{
+    display: flex;
+    justify-content: center;
+    gap: 12vw;
+    margin: 10vw 0 0 0;
+  }
+  .ready ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 40vw;
+  }
+  .ready div ul li{
+    width: 40%;
+  }
+  /*.ready ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 30px;
+  }*/
+  .download{
+    padding: 3vw;
+  }
+  .download p{
+    width: 50%;
   }
 }
